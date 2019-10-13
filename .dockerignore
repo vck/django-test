@@ -1,0 +1,12 @@
+.git
+.gitignore
+node_modules
+npm-debug.log
+Dockerfile*
+docker-compose*
+README.md
+LICENSE
+db.sqlite3
+myappp/__pycache__
+mytest/__pycache__
+.vscode
