@@ -20,5 +20,6 @@ from myapp.views import index_view, endpoint
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view),
-    path('api/', endpoint)
+    path('api/', endpoint),
+    path('api', endpoint)
 ]

@@ -11,11 +11,15 @@ PM2.5, PM10, SO2, NO2, CO, O3 separately for temperatures below
 
 # Setup
 
-gunicorn -b localhost:9000 mytest.wsgi
+- clone `git clone https://github.com/vck/django-test && cd django-test`
+
+- build docker image `docker build -t django-test .`
+
+- run server `docker run -p 8000:8000 django-test`
 
 # API
 
-/api -> GET
+/api -> GET	
 
 output:
 
