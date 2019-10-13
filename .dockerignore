@@ -8,5 +8,6 @@ README.md
 LICENSE
 db.sqlite3
 myappp/__pycache__
+myappp/data/admin/*
 mytest/__pycache__
 .vscode
