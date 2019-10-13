@@ -19,7 +19,9 @@ PM2.5, PM10, SO2, NO2, CO, O3 separately for temperatures below
 
 # API
 
-/api -> GET	
+- `/api/` -> GET
+
+- curl `localhost:8000/api/`	
 
 output:
 
