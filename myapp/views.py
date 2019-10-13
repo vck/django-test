@@ -3,7 +3,7 @@ import json
 import pandas as pd 
 import sys
 
-FILENAME = sys.path[0] + "/myapp/data/data.csv"
+FILENAME = sys.path[0]+"/staticfiles/data.csv"
 
 def index_view(request):
 	data = "hello world!"
