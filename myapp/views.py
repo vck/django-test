@@ -8,7 +8,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
 FILENAME = ROOT_DIR+"/staticfiles/data.csv"
 
 def index_view(request):
-	data = dict(msg="Hello!", plain="Antler", md5="fc4acdfe839b3b71bbc4d702ff3220")
+	data = dict(msg="Hello!", plain="Antler\n", md5="fc4acdfe839b3b71bbc4d702ff3220")
 	return HttpResponse(json.dumps(data))
 
 def endpoint(request):
