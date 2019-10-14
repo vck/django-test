@@ -2,8 +2,10 @@ from django.http import HttpResponse
 import json
 import pandas as pd 
 import sys
+import os
 
-FILENAME = sys.path[0]+"/staticfiles/data.csv"
+ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
+FILENAME = ROOT_DIR+"/staticfiles/data.csv"
 
 def index_view(request):
 	data = "hello world!"
