@@ -44,3 +44,23 @@ above: {
 	"O3"   : val
 }
 ```
+
+# notes
+
+for CO that bellow 20 degree, the NaN value shows that there's no data, so the standard deviation becomes NaN.
+
+```
+import pandas as pd
+
+df = pd.read_csv("staticfiles/data.csv")
+print(df[df["CO"] < 20]["CO"])
+```
+
+when the above code executed, the output:
+
+```
+Series([], Name: CO, dtype: float64)
+```
+
+it shows that, for column CO, there's no data bellow 20 degrees, so when the output from
+pandas converted to numpy array, the numpy array will also empty, thus results NaN standard deviation.
