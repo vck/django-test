@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 import json
 import pandas as pd 
-import sys
 import os
 
 ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
